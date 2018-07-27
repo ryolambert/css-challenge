@@ -66,14 +66,24 @@ body { width: 100%;}
 	/*src: url('/font/LiberationMono-Regular-webfont.woff') format('woff');*/
 /*}*/
 
+html,
+body {
+	margin: 0;
+	box-sizing: border-box;
+	/*changes the way the box model behaves by default. Box model grows inside out. Affects padding and border. Margin refers to the outside of the box and is not affected by this. */
+	font-family: courier New, monospace;
+	/*monospaced fonts are used in computing, each letter takes up the same amount of space on the output*/
+}
+
 header {
-	background-color: rgb(51,51,51);
-	color: chartreuse;
+	background-color: rgb(55, 55, 55);
+	color: limegreen;
 	padding: 15px;
 	width: 100%;
 }
 
-header h1, em {
+header h1,
+em {
 	display: inline;
 	margin-right: 1em;
 }
@@ -121,11 +131,11 @@ span {
 	text-shadow: black;
 }
 
-section:nth-child(4){
+section:nth-child(4) {
 	padding: 15px;
 	width: 100%;
-
 }
+
 section:nth-child(4) h2 {
 	text-align: right;
 }
@@ -135,44 +145,48 @@ table {
 	width: 100%;
 }
 
-th, td {
+th,
+td {
 	text-align: left;
-	color: chartreuse;
+	color: limegreen;
 	border: 1px solid white;
-	background-color: rgb(51,51,51);
+	background-color: rgb(48, 48, 48);
 	padding: 1em;
 }
 
 section:nth-child(5) {
-	background-color: rgb(51,51,51);
+	background-color: rgb(48, 48, 48);
 	padding: 15px;
 	width: 100%;
 }
 
 section:nth-child(5) {
-	background-color: rgb(51,51,51);
+	background-color: rgb(48, 48, 48);
 	padding: 15px;
 	width: 100%;
 }
 
 .form-wrapper {
-	color: chartreuse;
-	background-color: rgb(9,99,12);
+	color: limegreen;
+	background-color: rgb(15, 95, 15);
 	height: 70%;
 	padding: 10px;
 }
 
-.form-wrapper label, input, textarea {
+.form-wrapper label,
+input,
+textarea {
 	display: block;
 	margin-bottom: 10px;
 }
 
-.form-wrapper input, textarea {
+.form-wrapper input,
+textarea {
 	width: 30%;
 }
 
 .form-wrapper button {
-	background-color: chartreuse;
+	background-color: limegreen;
 	color: darkblue;
 	border: none;
 	padding: 5px 15px;
@@ -185,4 +199,3 @@ footer {
 	text-align: center;
 	padding: 15px;
 }
-
