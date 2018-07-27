@@ -96,4 +96,34 @@ img[alt*="captain janeway"] {
 	margin: 20px;
 }
 
+.about-me {
+	color: white;
+	background-color: blue;
+	width: 100%;
+	padding: 15px;
+}
+
+img[alt*="captain picard"] {
+	float: left;
+	margin: 10px;
+	max-width: 200px;
+	border: 2px solid white;
+	display: inline;
+}
+
+span {
+	color: yellow;
+	text-shadow: black;
+}
+
+section:nth-child(4){
+	padding: 15px;
+	width: 100%;
+
+}
+section:nth-child(4) h2 {
+	text-align: right;
+}
+
+
 
