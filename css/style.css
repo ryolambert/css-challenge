@@ -144,3 +144,21 @@ section:nth-child(5) {
 	width: 100%;
 }
 
+section:nth-child(5) {
+	background-color: rgb(51,51,51);
+	padding: 15px;
+	width: 100%;
+}
+
+.form-wrapper {
+	color: chartreuse;
+	background-color: rgb(9,99,12);
+	height: 70%;
+	padding: 10px;
+}
+
+.form-wrapper label, input, textarea {
+	display: block;
+	margin-bottom: 10px;
+}
+
