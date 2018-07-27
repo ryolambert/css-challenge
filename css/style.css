@@ -66,6 +66,7 @@ body { width: 100%;}
 	/*src: url('/font/LiberationMono-Regular-webfont.woff') format('woff');*/
 /*}*/
 
+/*Global*/
 body {
 	font-family: monospace, "Courier New";
 }
@@ -74,6 +75,7 @@ section {
 	padding: 2.75rem 0;
 }
 
+/*Head*/
 header {
 	background-color: rgb(55, 55, 55);
 	color: limegreen;
