@@ -61,6 +61,39 @@ body { width: 100%;}
 * * Pseudo Classes
 * * Attribute Selectors
 ******************************************************/
+header {
+	background-color: rgb(51,51,51);
+	color: chartreuse;
+	padding: 15px;
+	width: 100%;
+}
 
+header h1, em {
+	display: inline;
+	margin-right: 1em;
+}
+
+img[alt*="welcome to my homepage"] {
+	display: block;
+	margin: 60px auto;
+}
+
+.instructions-wrapper {
+	display: flex;
+	margin-bottom: 25px;
+	border: 2px solid black;
+	width: 100%;
+	padding: 15px;
+}
+
+img[alt*="captain janeway"] {
+	flex: auto;
+	max-height: 200px;
+}
+
+.instructions-content {
+	width: 70%;
+	margin: 20px;
+}
 
 
