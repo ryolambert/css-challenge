@@ -66,13 +66,12 @@ body { width: 100%;}
 	/*src: url('/font/LiberationMono-Regular-webfont.woff') format('woff');*/
 /*}*/
 
-html,
 body {
-	margin: 0;
-	box-sizing: border-box;
-	/*changes the way the box model behaves by default. Box model grows inside out. Affects padding and border. Margin refers to the outside of the box and is not affected by this. */
-	font-family: courier New, monospace;
-	/*monospaced fonts are used in computing, each letter takes up the same amount of space on the output*/
+	font-family: monospace, "Courier New";
+}
+
+section {
+	padding: 2.75rem 0;
 }
 
 header {
@@ -82,120 +81,121 @@ header {
 	width: 100%;
 }
 
-header h1,
-em {
-	display: inline;
-	margin-right: 1em;
+header h1 {
+	display: inline-block;
+	margin-right: 2rem;
+	font-size: 2.5rem;
+}
+
+@media only screen and (min-width: 500px) {
+	header {
+		background-color: rgb(55, 55, 55);
+		color: limegreen;
+	}
 }
 
 img[alt*="welcome to my homepage"] {
 	display: block;
-	margin: 60px auto;
+	margin: 0 auto 2rem;
 }
 
 .instructions-wrapper {
 	display: flex;
-	margin-bottom: 25px;
-	border: 2px solid black;
-	width: 100%;
-	padding: 15px;
+	align-items: flex-start;
+	border: 3px solid black;
+	padding: 20px;
 }
 
-img[alt*="captain janeway"] {
-	flex: auto;
-	max-height: 200px;
+.instructions-wrapper img {
+	width: 250px;
 }
 
 .instructions-content {
-	width: 70%;
-	margin: 20px;
+	flex: 1;
+	padding-right: 2rem;
 }
 
-.about-me {
-	color: white;
+.instructions-content h2 {
+	margin-top: 0;
+}
+
+section.about-me {
 	background-color: blue;
-	width: 100%;
-	padding: 15px;
+	color: #fff;
 }
 
-img[alt*="captain picard"] {
+.about-me img {
+	width: 300px;
 	float: left;
-	margin: 10px;
-	max-width: 200px;
-	border: 2px solid white;
-	display: inline;
+	margin-right: 2rem;
+	border: 3px solid white;
 }
 
-span {
+.about-me p span {
 	color: yellow;
-	text-shadow: black;
+	font-style: italic;
 }
 
-section:nth-child(4) {
-	padding: 15px;
-	width: 100%;
+@media only screen and (min-width: 500px) {
+	section.about-me {
+		background-color: blue;
+	}
 }
 
 section:nth-child(4) h2 {
 	text-align: right;
+	margin-top: 0;
 }
 
-table {
-	table-layout: fixed;
+section:nth-child(4) table {
 	width: 100%;
+	color: lime;
 }
 
-th,
-td {
-	text-align: left;
-	color: limegreen;
-	border: 1px solid white;
-	background-color: rgb(48, 48, 48);
-	padding: 1em;
-}
-
-section:nth-child(5) {
-	background-color: rgb(48, 48, 48);
-	padding: 15px;
-	width: 100%;
-}
-
-section:nth-child(5) {
-	background-color: rgb(48, 48, 48);
-	padding: 15px;
-	width: 100%;
-}
-
-.form-wrapper {
-	color: limegreen;
-	background-color: rgb(15, 95, 15);
-	height: 70%;
+section:nth-child(4) table td,
+section:nth-child(4) table th {
+	background-color: #333;
 	padding: 10px;
 }
 
-.form-wrapper label,
-input,
-textarea {
+div.sfooter-content section:last-child {
+	background-color: #333;
+}
+
+.form-wrapper {
+	background-color: darkgreen;
+	color: lime;
+	padding: 20px;
+}
+
+label {
 	display: block;
-	margin-bottom: 10px;
+	margin: 15px 0 5px 0;
 }
 
-.form-wrapper input,
-textarea {
+input, textarea {
 	width: 30%;
+	padding: 8px;
 }
 
-.form-wrapper button {
-	background-color: limegreen;
-	color: darkblue;
+button {
+	background-color: lime;
+	padding: 10px 31px;
+	font-weight: bold;
+	font-size: 1rem;
 	border: none;
-	padding: 5px 15px;
+}
+
+form div:nth-child(4) {
+	margin-bottom: 15px;
+}
+
+.form-wrapper h2 {
+	margin-top: 0;
 }
 
 footer {
-	width: 100%;
 	background-color: black;
 	color: white;
 	text-align: center;
-	padding: 15px;
 }
